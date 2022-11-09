@@ -7,15 +7,7 @@ import { getContacts } from 'redux/contactSlice';
 import { getFilter } from 'redux/filterSlice';
 
 const ContactList = () => {
-  // const contacts = useSelector(state => state.contacts);
-  // const filter = useSelector(state => state.filter);
   const dispatch = useDispatch();
-
-  // console.log(contacts);
-
-  // const list = () => {
-  //   return contacts.filter(e => e.name.toLowerCase().includes(filter));
-  // };
 
   useEffect(() => {
     dispatch(fetchContacts());

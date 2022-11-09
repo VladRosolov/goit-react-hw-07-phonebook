@@ -32,7 +32,6 @@ export const ContactsSlice = createSlice({
       state.isLoading = false;
       state.error = null;
       state.items.unshift(payload);
-      alert('Success!');
     },
     [addContact.rejected](state, { payload }) {
       state.isLoading = false;

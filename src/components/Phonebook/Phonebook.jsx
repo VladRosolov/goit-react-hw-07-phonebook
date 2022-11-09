@@ -41,11 +41,11 @@ export default function Phonebook() {
     );
   };
 
-  const addContacts = (id, name, number) => {
+  const addContacts = (name, number, id) => {
     if (contactIsExist(name, number)) {
       return alert(`${name} ${number} is already in Phonebook`);
     }
-    dispatch(addContact({ id, name, number }));
+    dispatch(addContact({ name, number, id }));
     setName('');
     setNumber('');
   };
